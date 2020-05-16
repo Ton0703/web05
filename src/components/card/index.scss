@@ -1,0 +1,28 @@
+.card{
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+
+    .left{
+        width: 60%;
+
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .right{
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .name{
+            font-size: 2rem;
+            font-weight: 600;
+            transform: translateX(30px);
+        }
+    }
+}
