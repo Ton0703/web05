@@ -4,6 +4,10 @@
     display: flex;
     justify-content: space-between;
 
+    @media screen and (max-width: 760px){
+        flex-direction: column;
+      }
+
     .item{
         width: 22%;
         height: auto;
@@ -11,8 +15,19 @@
         flex-direction: column;
         align-items: flex-start;
 
+        @media screen and (max-width:760px){
+            width: 100%;
+            flex-direction: row;
+            margin-bottom: 30px;
+          }
+
         .item-img{
             width: 100%;
+
+            @media screen and (max-width:760px){
+                width: 60%;
+                margin-right: 10px;
+            }
 
             img{
                 width: 100%;
@@ -20,11 +35,13 @@
                 object-fit: cover;
             }
         }
-        .item-time{
-            color: gray;
-        }
-        .item-title{
-            width: 100%;
+        .info{
+            .item-time{
+                color: gray;
+            }
+            .item-title{
+                width: 100%;
+            }
         }
     }
 }
