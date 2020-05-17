@@ -30,8 +30,9 @@ function App() {
       </section>
 
       <section className={`sec-1 ${visible ? "visible1" : ""}`} ref={ref}>
-        <div className="title">news</div>
+        
         <div className="list">
+        <div className="title">news</div>
           <List />
           <div className="more">
             <span>more</span>

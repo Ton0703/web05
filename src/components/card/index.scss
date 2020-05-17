@@ -4,11 +4,19 @@
   display: flex;
   justify-content: center;
 
+  @media screen and (max-width: 560px){
+    flex-direction: column;
+    align-items: center;
+  }
+
   .left {
     width: 60%;
     transform: translateX(-100px);
     opacity: 0;
     transition: all .5s ease;
+    @media screen and (max-width: 560px){
+      width: 100%;
+    }
 
     img {
       width: 100%;
@@ -24,11 +32,18 @@
     transform: translateX(100px);
     opacity: 0;
     transition: all .5s ease .5s;
+    @media screen and (max-width: 560px){
+      width: 100%;
+    }
 
     .name {
       font-size: 2rem;
       font-weight: 600;
       transform: translateX(30px);
+
+      @media screen and (max-width: 560px){
+        transform: translateX(0);
+      }
     }
   }
 }
